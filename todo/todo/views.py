@@ -25,7 +25,6 @@ def signup(request):
     
     return render(request, 'signup.html')
         
-     
         
         
         
@@ -43,7 +42,7 @@ def loginn(request):
             return redirect('/todopage')
         else:
             return redirect('/loginn')
-               
+        
     return render(request, 'loginn.html')
         
 @login_required(login_url='/loginn')
